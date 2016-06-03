@@ -14,20 +14,33 @@ Route::get('/', function()
 });
 */
 
+/*
+Home page
+*/
 Route::get('/','RamsController@getinfo');
 
+/*
+Page from tutorial
+*/
 Route::get('/users', function()
 {
      $users = User::all();
 
     return View::make('users')->with('users', $users);
 });
+
+/*
+Download ram page
+*/
 Route::get('/ram', function()
 {
 	return View::make('ram');
 });
 Route::post('/ram','RamsController@create');
 
+/*
+Complaint page
+*/
 Route::get('/complain',function(){
 	return View::make('complain');
 });

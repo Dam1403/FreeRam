@@ -11,7 +11,6 @@ class Ram extends Eloquent{
 		 $table->timestamps();
 	*/
 
-
 	/**
 	 * The database table used by the model.
 	 *
